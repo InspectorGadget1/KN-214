@@ -43,7 +43,7 @@
 .logo-descr{
     display: block;
     font-size: 14;
-    color: rgb(128, 128, 128);
+    color: #262626;
 }
 .phone a{
     display: block;
@@ -56,7 +56,7 @@
     display: block;
     text-align: right;
     font-size: 14px;
-    color: rgb(128, 128, 128);
+    color: #262626;
 }
 .email-text{
     display: block;
@@ -69,7 +69,7 @@
     display: block;
     text-align: right;
     font-size: 14px;
-    color: rgb(128, 128, 128);
+    color: #262626;
 }
 .navbar-button{
     border: 2px solid  #f2eee5 ;
@@ -104,14 +104,16 @@
     color: #ffffff;
     font-weight: bold;
 }
-.advanteges-title{
+.advantages{
+    padding-bottom: 60px;
+}
+.main-title{
     display: block;
     text-align: center;
-    margin-top: 70px;
+    padding-top: 60px;
     font-size: 30px;
     font-weight: bold;
-    
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 .grid-3{
     display: grid;
@@ -120,17 +122,36 @@
     grid-gap: 300px;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.adv-img1{
+.adv-img{
     width: 200px;
     height: 200px;
     border-style: solid;
 }
-.adv-img2{
+.prices{
+    padding-bottom: 500px;
+    background-color: #f2eee5;
+}
+.order{
+    padding-bottom: 500px;
+}
+.reviews{
+    background-color: #f2eee5;
+    padding-bottom: 60px;
+}
+.grid-4{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 120px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.review-img{
     width: 200px;
     height: 200px;
     border-style: solid;
-}.adv-img3{
-    width: 200px;
-    height: 200px;
-    border-style: solid;
+}
+.footer{
+    text-align: center;
+    padding: 15px;
+    color: black;
 }
