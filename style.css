@@ -155,4 +155,14 @@
     padding: 15px;
     color: black;
 }
-@media
+@media(max-width: 320px){
+    .container{
+        max-width: 300px;
+    }
+    .grid-3{
+        grid-template-columns: 1fr;
+    }
+    .grid-4{
+        grid-template-columns: 1fr;
+    }
+}
