@@ -81,7 +81,7 @@
     font-weight: bold;
 }
 .hero{
-    background: #f2eee5 url(/img/bg1.jpg) no-repeat center;
+    background: #f2eee5 url(img/bg1.jpg) no-repeat center;
     background-size: cover;
     padding-top: 250px;
     padding-bottom: 270px;
@@ -154,24 +154,4 @@
     text-align: center;
     padding: 15px;
     color: black;
-}
-
-@media (min-width:320px){
-    .container{
-        max-width: 300px;
-    }
-    
-    .phone a{
-        display: none;
-    }
-    .work-time{
-        display: none;
-    }
-    .email{
-        display: none;
-    }
-    .grid-3{
-            grid-template-columns: 1fr;
-
-    }
 }
