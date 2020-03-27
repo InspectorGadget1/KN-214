@@ -169,44 +169,62 @@
     }
 }
 @media screen and ( max-width: 991px ){
-    .container{
-        max-width: 750px;
-    }
-    .grid-3{
-        grid-template-columns:1fr;
-        align-items: center;
-        padding-left: 35%;
-    }
-    .grid-4{
-        grid-template-columns:1fr;
-        align-items: center;
-    }
 }
 @media screen and ( max-width: 560px ){
-    .container{
-        max-width: 100%;
-        padding: 0 30px;
-    }
-    
-    .logo-descr{
-        display: none;
-    }
-    .phone a{
-        display: none;
-    }
-    .work-time{
-        display: none;
-    }
-    .email-text{
-        display: none;
-    }
-    .email a{
-        display: none;
-    }
-    .navbar-button{
-        padding: 10 17;
-    }
+            .grid-3{
+                grid-template-columns:1fr;
+                align-items: center;
+                padding-left: 15%;
+            }
+            .grid-4{
+                grid-template-columns:1fr;
+                align-items: center;
+                padding-left: 15%;
+            }
+            .container{
+                max-width: 100%;
+                padding: 0 30px;
+            }
+            .logo-text{
+                margin-left: 10px;
+            }
+            .logo-descr{
+                display: none;
+            }
+            .phone a{
+                display: none;
+            }
+            .work-time{
+                display: none;
+            }
+            .email-text{
+                display: none;
+            }
+            .email a{
+                display: none;
+            }
+            .navbar-button{
+                padding: 5px 10px;
+            }
+            .hero{
+                background-size: cover;
+                background-position: top left 32%;
+                padding-top: 80px;
+            }
+            .hero-title{
+                font-size: 25px;
+                margin-bottom: 20px;
+            }
+            .hero-subtitle{
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+            .button{
+                font-size: 12px;
+                padding: 10px 5px;
+                max-width: 90px;
+                margin-bottom: 60px;
+            }
 }
-
 
 
