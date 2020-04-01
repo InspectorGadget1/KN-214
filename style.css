@@ -1,3 +1,28 @@
+@font-face {
+font-family: 'Proxima Nova Regular';
+src: url('ProximaNova-Regular.eot');
+src: url('ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+url('ProximaNova-Regular.woff') format('woff'),
+url('ProximaNova-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+table{
+width: 100%;
+border-collapse:collapse;
+}
+table, td, th {
+border: 1px solid #595959;
+}
+td, th {
+padding: 3px;
+width: 30px;
+height: 35px;
+}
+th {
+background-color: #7accee;
+}
 .container{
     max-width: 1200px;
     margin: auto;
@@ -138,11 +163,8 @@
     border-style: solid;
 }
 .prices{
-    padding-bottom: 500px;
-    background-color: #f2eee5;
-}
-.order{
-    padding-bottom: 500px;
+    padding-bottom: 70px;
+    background-color: #fff;
 }
 .reviews{
     background-color: #f2eee5;
@@ -164,23 +186,121 @@
     padding: 15px;
     color: black;
 }
-
+.order{
+    background-color: #f2eee5;
+}
+.order-form{
+    padding-bottom: 40px;
+}
+.order-subtitle{
+    font-size: 17px;
+    font-weight: bold;
+}
+.form-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.form-label{
+    display: block;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+.form-group{
+    flex-basis: 33.3%;
+}
+.form-input{
+    height: 60px;
+    width: 100%;
+    border: 4px solid #f2eee5;
+}
+.checkbox{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #dddddd;
+}
+.checkbox-label{
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+}
+.form-block-checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.file1{
+    padding-left: 10px;
+}
+.form-button{
+    border: none;
+    text-transform: uppercase;
+    height: 65px;
+    width: 100%;
+    background-color: rgb(43, 70, 226);
+    color: #ffffff;
+    font-weight: bold;
+}
 @media screen and ( max-width: 1199px ){
     .container{
         max-width: 960px;
     }
 }
-
-@media screen and (min-width: 320px) and ( max-width: 768px ){
+@media screen and ( max-width: 1027px ){
+    .container{
+        max-width: 100%;
+        padding: 0 30px;
+    }
+    .hero{
+        background: url(img/bg1\ mid.jpg);
+        background-size: auto;
+        background-position: 30% -9000%;
+        padding-bottom: 500px;
+    }
+}
+@media screen and ( max-width: 996px ){
+    .container{
+        overflow: hidden;
+        max-width: 100%;
+        padding: 0 30px;
+    }
+    .hero{
+    background: url(img/bg1\ small.jpg);
+        background-position: 30% -9000%;
+    }
+    .grid-4{
+        margin-left: 0;
+        justify-items: center;
+        grid-template-columns: 1fr;
+    }
+    .form-block{
+        flex-direction: column;
+    }
+    .form-group{
+        flex-basis: 100%;
+        width: 100%;
+    }
+    .form-input{
+        margin-bottom: 20px;
+    }
+    
+}
+@media screen and ( max-width: 768px ){
             .grid-3{
                 grid-template-columns:1fr;
-                align-items: center;
-                padding-left: 5%;
+                margin-left: 0;
+                justify-items: center;
             }
             .grid-4{
                 grid-template-columns:1fr;
-                align-items: center;
-                padding-left: 10%;
+                margin-left: 0;
+                justify-items: center;
             }
             .container{
                 max-width: 100%;
@@ -208,9 +328,11 @@
                 padding: 5px 10px;
             }
             .hero{
+                background: url(img/bg1\ small.jpg);
                 background-size: cover;
-                background-position: top left 32%;
-                padding-top: 80px;
+                background-position: 30% 10%;
+                padding-top: 70px;
+                padding-bottom: 330px;
             }
             .hero-title{
                 font-size: 25px;
@@ -230,5 +352,3 @@
                 margin-right: 10px;
             }
 }
-
-
