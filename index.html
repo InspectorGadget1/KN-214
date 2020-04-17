@@ -5,14 +5,33 @@
     <meta charset="UTF-8" name="viewport" content="width=device-width; initial-scale=1">
     <title>Soft paper</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
 </head>
 
 <body>
     <header class="header">
+        <div class="menu">
+            <div class="container">
+                <nav class="menu-nav">
+                    <a href="#top" class="menu-link">Головна</a>
+                    <div class="drop-menu">
+                        <button class="drop-link">Замовити</a>
+                        <div class="drop">
+                            <a href="#price">ціни</a>
+                            <a href="#order">Заповнити форму</a>
+                        </div>        
+                    </div>
+                    <a href="#advantage" class="menu-link">Наші переваги</a>
+                    <a href="#review" class="menu-link">Відгуки</a>
+                </nav>
+            </div>
+        </div>
         <div class="navbar">
             <div class="container">
                 <div class="navbar-block">
-                    <button class="menu-button">
+                    <button  class="menu-button">
                         <span class="menu-button-line"></span>
                         <span class="menu-button-line"></span>
                         <span class="menu-button-line"></span>
@@ -37,7 +56,7 @@
             <div class="container">
                 <h1 class="hero-title">Гарантія якості <br> за мінімальну <br> ціну</h1>
                 <span class="hero-subtitle">від 200 грн</span>
-                <button class="button">Замовити картину</button>
+                <a class="button" href="#order">Замовити картину</a>
             </div>
         </div>
     </header>
@@ -45,7 +64,7 @@
     <main>
         <section class="advantages">
             <div class="container">
-                <h2 class="main-title">Наші переваги</h2>
+                <h2 class="main-title" id="advantage">Наші переваги</h2>
                 <div class="grid-3">
                     <div >
                         <img src="img/Canva.jpg" alt="" class="adv-img">
@@ -66,7 +85,7 @@
                 </div>
             </div>
         </section>
-        <section class="order">
+        <section class="order" id="order">
             <div class="container">
                 <div class="order-block">
                     <h2 class="main-title">Залишити заявку на друк</h2>
@@ -124,7 +143,7 @@
                 </div>
             </div>
         </section>
-        <section class="prices">
+        <section class="prices" id="price">
             <div class="container">
                 <div class="table-block">
                     <h2 class="main-title">Таблиця цін</h2>
@@ -299,7 +318,7 @@
         </section>
         <section class="reviews">
             <div class="container">
-                <h2 class="main-title">Відгуки</h2>
+                <h2 class="main-title" id="review">Відгуки</h2>
                 <div class="grid-4">
                     <div class="grid1">
                         <img src="img/review1.jpg" alt="" class="review-img">

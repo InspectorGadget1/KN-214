@@ -8,6 +8,25 @@ font-weight: normal;
 font-style: normal;
 }
 
+#advantage{
+    padding-top: 150px;
+	margin-top: -55px;
+	-webkit-background-clip: content-box;
+	background-clip: content-box;
+}
+#price , #order{
+    padding-top: 55px;
+	margin-top: -55px;
+	-webkit-background-clip: content-box;
+	background-clip: content-box;
+}
+li {
+list-style-type: none;
+}
+ul{
+margin-left: 0;
+padding-left: 0;
+}
 table{
 width: 100%;
 border-collapse:collapse;
@@ -52,12 +71,84 @@ background-color: #7accee;
     height: 80px;
     width: 60px;
 }
+.menu-button :hover{
+    cursor: pointer;
+}
+.menu-button :focus{
+    outline: none;
+}
 .menu-button-line{
     display: block;
     width: 22px;
     height: 3px;
     background-color:rgb(43, 70, 226);
     margin: 2px 0;
+}
+.menu{
+    position: fixed;
+    top: 79px;
+    padding: 10px 0;
+    width: 100%;
+    background-color:rgb(43, 70, 226);
+    transition: 0.2s;
+    transform: translateY(-100%);
+}
+.drop-menu{
+    
+    position: relative;
+    display: inline-block;
+
+}
+.drop-link{
+    background-color: rgb(43, 70, 226);
+    font-size: 17px;
+    text-transform: uppercase;
+    border: none;
+    color: #ffffff;
+}
+.drop-link, 
+.drop-link:active, 
+.drop-link:focus {
+    outline: none;
+}
+
+.drop{
+    left: 50%;
+    margin-left: -100px;
+    padding-top: 9px;
+    display: none;
+    position: absolute;
+    background-color: rgb(43, 70, 226);
+    min-width: 200px;
+    justify-content: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.drop a{
+    color: #ffffff;
+    padding: 12px 16px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+}
+.drop-menu:hover .drop{
+    display: block;
+}
+.drop a:hover {background-color: rgb(125, 109, 252);}
+.menu-active{
+    transform: translateY(0);
+}
+.menu-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.menu-link{
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #ffffff;
 }
 .logo-text{
     display: block;
@@ -122,12 +213,12 @@ background-color: #7accee;
     margin-bottom: 70px;
 }
 .button{
-    border: none;
     text-transform: uppercase;
     padding: 25px 45px;
     background-color: rgb(43, 70, 226);
     color: #ffffff;
     font-weight: bold;
+    text-decoration: none;
 }
 .advantages{
     padding-bottom: 60px;
@@ -292,6 +383,12 @@ background-color: #7accee;
     
 }
 @media screen and ( max-width: 768px ){
+            #review{
+                padding-top: 150px;
+                margin-top: -55px;
+                -webkit-background-clip: content-box;
+                background-clip: content-box;
+            }
             .grid-3{
                 grid-template-columns:1fr;
                 margin-left: 0;
@@ -351,4 +448,18 @@ background-color: #7accee;
             .main-title{
                 margin-right: 10px;
             }
+            .menu-nav{
+                flex-direction: column;
+            }
+            .menu-link{
+                margin-bottom: 20px;
+            }
+            .drop{
+                position: relative;
+                display: none;
+            }
+            .drop-link{
+                margin-bottom: 20px;
+            }
+            
 }
