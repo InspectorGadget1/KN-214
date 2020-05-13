@@ -90,19 +90,19 @@
                 <div class="order-block">
                     <h2 class="main-title">Залишити заявку на друк</h2>
                     <span class="order-subtitle">Замовте зараз і отримайте знижку 20% на другу картину</span>
-                    <form action="#" class="order-form">
+                    <form action="#" class="order-form" onsubmit="return Checkform(this)">
                         <div class="form-block">
                             <div class="form-group">
                                 <label for="" class="form-label">Підрамник</label>
-                                <input type="text" class="form-input">
+                                <input type="text" name="Stretcher" class="form-input" required>
                             </div>
                             <div class="form-group">
                                 <label for="" class="form-label">Розмір (ВхШ)</label>
-                                <input type="text" class="form-input">
+                                <input type="text" name="Size" class="form-input" required>
                             </div>
                             <div class="form-group">
                                 <label for="" class="form-label">Оформлення торця</label>
-                                <input type="text" class="form-input">
+                                <input type="text" name="End design" class="form-input" required>
                             </div>
                         </div>
                         <div class="form-block-checkbox">
@@ -123,17 +123,18 @@
                             <div class="form-checkbox">
                                 <label class="checkbox-label" for="">
                                     Виберіть файл: 
-                                    <input class="file1"type="file" accept="image/*">
+                                    <input class="file1"type="file" name="Picture" accept="image/*" required>
                                 </label>
                             </div>
 
                         </div>
                         <div class="form-block">
                             <div class="form-group">
-                                <input type="text"class="form-input"placeholder="Ваше ім'я">
+                                <input type="text"class="form-input" name="Name" placeholder="Ваше ім'я" required>
                             </div>
                             <div class="form-group">
-                                <input type="tel"class="form-input" placeholder="Ваш телефон">
+                                <input type="tel"class="form-input" name="Tel" placeholder="Ваш телефон"onKeyPress ="if ((event.keyCode < 48) || (event.keyCode > 57))
+  event.returnValue = false;" required>
                             </div>
                             <div class="form-group">
                                 <input type="submit" class="form-button" value="Замовити">
