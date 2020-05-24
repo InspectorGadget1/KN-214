@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width; initial-scale=1">
     <title>Soft paper</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link id="style" href="style.css" rel="stylesheet" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/script.js"></script>
 
@@ -31,7 +31,8 @@
         <div class="navbar">
             <div class="container">
                 <div class="navbar-block">
-                    <button  class="menu-button">
+                    <button class="theme_light" id="theme_light"><img class="theme_png" src="/img/theme_light.png"></button>
+                    <button class="menu-button">
                         <span class="menu-button-line"></span>
                         <span class="menu-button-line"></span>
                         <span class="menu-button-line"></span>
@@ -48,7 +49,8 @@
                         <a href="tel:+380966666666">+380 96 666-66-66</a>
                         <span class="work-time">пн-пт 9-21</span>
                     </div>
-                    <button class="navbar-button">Передзвоніть мені</button>
+                    <button class="navbar-button" id="recall">Передзвоніть мені</button>
+                    <button class="theme_dark" id="theme_dark"><img class="theme_png" src="/img/theme_dark.png"></button>
                 </div>
             </div>
         </div>
@@ -90,7 +92,7 @@
                 <div class="order-block">
                     <h2 class="main-title">Залишити заявку на друк</h2>
                     <span class="order-subtitle">Замовте зараз і отримайте знижку 20% на другу картину</span>
-                    <form action="#" class="order-form" onsubmit="return Checkform(this)">
+                    <form action="#" class="order-form" id="form">
                         <div class="form-block">
                             <div class="form-group">
                                 <label for="" class="form-label">Підрамник</label>
@@ -133,8 +135,7 @@
                                 <input type="text"class="form-input" name="Name" placeholder="Ваше ім'я" required>
                             </div>
                             <div class="form-group">
-                                <input type="tel"class="form-input" name="Tel" placeholder="Ваш телефон"onKeyPress ="if ((event.keyCode < 48) || (event.keyCode > 57))
-  event.returnValue = false;" required>
+                                <input type="tel"class="form-input" id="tel_form" name="Tel" placeholder="Ваш телефон" required>
                             </div>
                             <div class="form-group">
                                 <input type="submit" class="form-button" value="Замовити">
